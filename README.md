@@ -65,6 +65,6 @@ The method `aggregate_scores` takes a list of scores, and returns an object with
 N.B. The `aggregate_scores` method will ignore and remove the player and the id from the score objects in the list. 
 If a list is passed that contains scores of multiple players, the aggregations will not be split by player.
 
-Open http://localhost:3000/ in the browser to get a homepage with links to:
+Run the application and open http://localhost:3000/ in the browser to get a homepage with links to:
 * [RDoc documentation](http://localhost:3000/docs/index.html)
 * [Swagger JSON API documentation](http://localhost:3000/swagger/index.html)
