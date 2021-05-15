@@ -43,7 +43,7 @@ The project has one single model: `score` which also provides additional class m
 * `Score.by_players(players)` where players can be a string or a list, 
 * `Score.before(datetime)` and `Score.after(datetime)` to filter the scores by a given DateTime object
 
-The API is divided across two controllers:
+The JSON API is divided across two controllers:
 * `ScoresController` which provides the basic CRUD (minus Update) and Search functionality for the scores
   * `POST /api/scores` to submit a score
   * `GET /api/scores/{id}` to retrieve a score object by id
