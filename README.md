@@ -23,6 +23,20 @@ To get the application up and running:
 * run `bundle exec rails db:migrate` to prepare the local database
 * run `bundle exec rails s` to start the server
     * the server will be available at http://localhost:3000/
+
+Alternatively if you have docker installed simply run: `docker-compose up` from the root of the repository, this will:
+* create an image if missing by:
+    * create an image starting from Ruby:3.0.1 image
+    * copy the Gemfile and install the dependencies
+    * copy the sources over to the image
+    * run db:migrate to initialize the sqllite3 local database
+    * setup to start the rails server when the container is started
+* run the service and expose the port 3000
+* access the api via http://localhost:3000 as you would if you had started it locally.
+
+N.B. If you run bundle install locally, before creating the docker image, make sure you're using the same cpu architecture as the image.
+If you compile on a M1 Mac mini, delete Gemfile.lock before creating the docker image as it might reference some Arm64 specific dependencies that will not work with the base ruby image.
+
     
 
 Executing the Specs
