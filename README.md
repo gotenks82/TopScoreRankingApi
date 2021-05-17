@@ -82,3 +82,10 @@ If a list is passed that contains scores of multiple players, the aggregations w
 Run the application and open http://localhost:3000/ in the browser to get a homepage with links to:
 * [RDoc documentation](http://localhost:3000/docs/index.html)
 * [Swagger JSON API documentation](http://localhost:3000/swagger/index.html)
+
+
+Documentation
+-------------
+
+* Swagger api documentation is automatically generated at runtime
+* To Re-generate RDoc documentation run `./generate_rdocs.sh` to generate the docs and place them unter /public/docs so that they will be served by the application directly.
